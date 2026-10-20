@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Bibo 生态中的骰子生命体：玩法、亮点与硬件基础汇报页" />
+    <title>Bibo 生态中的骰子生命体</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="grain" aria-hidden="true"></div>
+    <header class="topbar">
+      <a class="brand" href="#home" aria-label="回到首页">
+        <span class="brand-mark"><i></i><i></i><i></i><i></i></span>
+        <span>BIBO / DICE FIELD</span>
+      </a>
+      <nav class="nav" aria-label="页面导航">
+        <a href="#world">生态世界观</a>
+        <a href="#highlights">两大亮点</a>
+        <a href="#map">玩法地图</a>
+        <a href="#hardware">基础硬件</a>
+      </nav>
+      <span class="status"><b></b> 项目汇报版</span>
+    </header>
+
+    <main>
+      <section class="hero section-pad" id="home">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">BIBO ECOSYSTEM / DICE LIFE FORMS</p>
+          <h1>骰子不只是<br /><em>随机结果。</em></h1>
+          <p class="hero-lede">它们是 Bibo 生态里一群由简单规则组成的二进制小生物：会感知、会回应，会在扎堆之后形成自己的小社会。</p>
+          <div class="hero-meta">
+            <span>一个生态</span><span class="dot">·</span><span>两条玩法主线</span><span class="dot">·</span><span>一套交互底层</span>
+          </div>
+          <a class="scroll-cue" href="#world"><span class="scroll-line"></span><span>向下查看项目结构</span></a>
+        </div>
+        <div class="hero-visual reveal reveal-delay" aria-label="Bibo 与骰子生命体的生态关系示意图">
+          <div class="orbit orbit-a"></div>
+          <div class="orbit orbit-b"></div>
+          <div class="orbit orbit-c"></div>
+          <div class="bibo-core">
+            <span class="core-label">BIBO</span>
+            <div class="core-eyes"><i></i><i></i></div>
+            <span class="core-caption">主角生物<br />发起 · 观察 · 反馈</span>
+          </div>
+          <div class="creature c1"><span>·</span></div>
+          <div class="creature c2"><span>↗</span></div>
+          <div class="creature c3"><span>~</span></div>
+          <div class="creature c4"><span>+</span></div>
+          <div class="creature c5"><span>!</span></div>
+          <div class="creature c6"><span>♪</span></div>
+          <span class="orbit-note note-one">小生物群体</span>
+          <span class="orbit-note note-two">关系发生器</span>
+          <span class="orbit-note note-three">感知 / 表达</span>
+        </div>
+      </section>
+
+      <section class="world section-pad" id="world">
+        <div class="section-heading reveal">
+          <p class="section-kicker">01 / WORLD VIEW</p>
+          <h2>先有 Bibo 生态，<br /><span>再长出骰子生命体。</span></h2>
+          <p>二进制小生物不是脱离 Bibo 的另一套世界观，而是 Bibo 生态中自然出现的一类微型生物。Bibo 负责更复杂的关系和情绪，骰子负责把简单的感知和反馈扩展成群体。</p>
+        </div>
+        <div class="world-grid">
+          <div class="world-map reveal">
+            <div class="map-line line-1"></div><div class="map-line line-2"></div><div class="map-line line-3"></div><div class="map-line line-4"></div>
+            <div class="map-node node-bibo"><small>高复杂度</small><strong>Bibo</strong><span>发起 / 观察 / 关系</span></div>
+            <div class="map-node node-dice"><small>低门槛感知</small><strong>二进制小生物</strong><span>动作 / 音调 / 震动</span></div>
+            <div class="map-node node-human"><small>日常关系</small><strong>用户</strong><span>提问 / 触碰 / 加入</span></div>
+            <div class="map-node node-pet"><small>外部刺激</small><strong>宠物</strong><span>扒拉 / 追逐 / 停下</span></div>
+            <div class="map-node node-child"><small>想象世界</small><strong>儿童</strong><span>设定情景 / 编故事</span></div>
+            <div class="map-pulse pulse-1"></div><div class="map-pulse pulse-2"></div><div class="map-pulse pulse-3"></div>
+          </div>
+          <div class="world-notes reveal reveal-delay">
+            <div class="note-block"><span class="note-index">A</span><div><h3>生态里的角色分工</h3><p>Bibo 是更高阶的主角生物；骰子是可以被不断增加、组合和赋予新场景的微型生物节点。</p></div></div>
+            <div class="note-block"><span class="note-index">B</span><div><h3>简单规则也能产生生命感</h3><p>骰子不需要完整自然语言，只要对动作作出稳定、带性格差异的反馈，用户就能理解“它有自己的脾气”。</p></div></div>
+            <div class="note-block"><span class="note-index">C</span><div><h3>数量增加，关系也增加</h3><p>单颗骰子是个体，多颗骰子是群体；它们可以竞争、合作、轮流回应，形成一个小社会。</p></div></div>
+          </div>
+        </div>
+        <figure class="reference-visual world-visual reveal"><img src="assets/bibo-ecosystem.png" alt="Bibo 与二进制微生命体生态系统概念图" /><figcaption>Bibo 生态中的角色层级、性格差异与群体关系</figcaption></figure>
+        <div class="inspiration-note reveal"><span class="inspiration-label">INSPIRATION / 灵感发散</span><div><h3>从“成群的小生物”出发</h3><p>灵感来自宫崎骏电影中成群出现、各自有动作和声音的微型生物，也来自角落生物式的陪伴感与群体性格。这里借鉴的是一种观察方式：单个个体很简单，但当它们扎堆、回应、追逐或一起安静下来，就会让人感觉一个小世界正在发生。</p><p>因此，骰子不需要说完整的话。它们可以用简单音阶、短音节、震动和滚动传递“电报”，让用户听不懂具体内容，却能感受到它们正在一起做某件事。具体角色、造型和行为将保持 Bibo 自己的原创设定。</p></div></div>
+        <div class="inspiration-images reveal" aria-label="二进制小生物的灵感参考图">
+          <figure class="inspiration-image">
+            <img src="assets/inspiration-wala-wala.png" alt="成群的微型生物与煤炭精灵形象参考" />
+            <figcaption><strong>群体生命感</strong><span>许多个体聚在一起，各自做着细小动作，形成热闹而有秩序的群落。</span></figcaption>
+          </figure>
+          <figure class="inspiration-image">
+            <img src="assets/inspiration-pixel-creatures.png" alt="多个彩色像素小方块生物的群体参考" />
+            <figcaption><strong>简单个体与性格差异</strong><span>基础造型简洁，通过颜色、动作和回应差异，让每个小生物显出自己的性格。</span></figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="highlights section-pad" id="highlights">
+        <div class="section-heading reveal">
+          <p class="section-kicker">02 / HIGHLIGHTS</p>
+          <h2>两个要点，<br /><span>说明骰子为什么值得做。</span></h2>
+        </div>
+        <div class="highlight-grid">
+          <article class="highlight-card highlight-life reveal">
+            <div class="highlight-top"><span class="big-index">01</span><span class="tag">去 Bibo 化玩法</span></div>
+            <h3>二进制生命体</h3>
+            <p class="highlight-intro">骰子从“产生数字的工具”变成 Bibo 生态里的微型生物。它的生命感来自感知、情绪、性格和近期互动，而不是来自复杂对话。</p>
+            <div class="life-loop"><span>外界刺激</span><b>→</b><span>状态改变</span><b>→</b><span>按性格回应</span><b>→</b><span>继续互动</span></div>
+            <div class="mini-example"><span class="example-label">一个最小例子</span><p>同样被连续晃动三次：活泼骰子越来劲，胆小骰子短震后安静，暴躁骰子用急促震动抗议。</p></div>
+            <figure class="reference-visual life-visual"><img src="assets/binary-life.png" alt="二进制生命体会记忆的小方块概念图" /><figcaption>感知刺激、情绪变化、性格回应、短期记忆与逐渐恢复</figcaption></figure>
+            <div class="swarm-demo" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><span>个体 → 群体 → 小社会</span></div>
+          </article>
+          <article class="highlight-card highlight-bibo reveal reveal-delay">
+            <div class="highlight-top"><span class="big-index">02</span><span class="tag">Bibo 体系玩法</span></div>
+            <h3>在玩的过程里，看见 Bibo 的性格</h3>
+            <p class="highlight-intro">骰子提供随机结果和连续回合，Bibo 通过观察、输赢、等待、加入和退出，表现出它的状态与关系。</p>
+            <div class="session-timeline">
+              <div><b>01</b><span>用户说<br />“Bibo 自己玩”</span></div>
+              <div><b>02</b><span>骰子滚动<br />Bibo 观察</span></div>
+              <div><b>03</b><span>连赢兴奋<br />连输沮丧</span></div>
+              <div><b>04</b><span>玩累休息<br />或邀请继续</span></div>
+            </div>
+            <div class="mini-example"><span class="example-label">一个最小例子</span><p>Bibo 连输两轮后叹气；用户在间隔中加入，Bibo 取消施法，等待用户掷完再继续自己的回合。</p></div>
+            <figure class="document-image"><img src="assets/turn-play-mindmap.jpg" alt="文档中的回合玩手写流程图" /><figcaption>来自原始规划的“回合玩”流程记录</figcaption></figure>
+          </article>
+        </div>
+      </section>
+
+      <section class="map section-pad" id="map">
+        <div class="section-heading reveal">
+          <p class="section-kicker">03 / PLAY MAP</p>
+          <h2>同一套底层，<br /><span>面对不同对象长出不同玩法。</span></h2>
+          <p>下面的例子均来自现有玩法规划，重点不是展示功能数量，而是让每个互动对象都能用一句话理解。</p>
+        </div>
+        <div class="play-intro reveal"><span class="play-intro-mark">PLAY MAP</span><p>以下按文档里的互动对象和玩法链路展开。每个例子都说明：<b>怎么触发 → 骰子 / Bibo 怎么回应 → 形成什么体验</b>。</p></div>
+        <div class="play-groups">
+          <article class="play-group group-bibo reveal">
+            <header class="group-heading"><span class="group-icon">B</span><div><span class="group-label">关系对象 / 01</span><h3>Bibo 与骰子</h3><p>骰子给出随机结果与互动过程，Bibo 在观察、输赢、等待和加入中表现性格。</p></div></header>
+            <div class="play-layers">
+              <div class="play-layer layer-core"><span class="layer-label">基础 / 核心玩法</span><h4>先让用户感受到 Bibo 的“活”</h4><p>不需要额外配件，仅靠 Bibo、骰子本体和基础交互，就能完成 Bibo 自己玩、用户加入、回合互动、观察结果和输赢反馈。所有表现继续区分 I 人 / E 人 Bibo。</p><div class="layer-example"><b>基础例子</b><span>用户让 Bibo 自己玩 → Bibo 施魔法、观察骰子 → 用户在间隙加入 → 变成回合玩。</span></div></div>
+              <div class="play-layer layer-derived"><span class="layer-label">衍生玩法</span><h4>再让用户感受到情绪被看见和关心</h4><p>在基础互动成立后，通过 Bibo、App 和情绪 / 游戏配件延展更具体的内容：把点数转成情绪签、卡牌探索、冥想解压、飞行棋等，进入“看见情绪—理解情绪—处理情绪”的关系过程。</p><div class="layer-example"><b>衍生例子</b><span>用户掷骰 → 点数决定抽取情绪卡 / 情绪签 → App 展示答案和手帐；或进入冥想模式，用节律震动、音乐和时长记录帮助用户处理情绪。</span></div></div>
+            </div>
+            <div class="layer-intent"><span>为什么要分层</span><strong>先用最小闭环证明“Bibo 会玩、会回应、有性格”，再用配件和内容把这种关系延展到用户的情绪生活。</strong></div>
+            <div class="scene-grid">
+              <section class="scene-card"><span class="scene-name">Bibo 自己玩</span><p class="scene-flow"><b>触发</b> 用户说“Bibo 自己玩”或在 App 点击开始。<br /><b>过程</b> Bibo 进入施魔法 / 专注状态，骰子开始自动掷；每局间隔约 5 秒，Bibo 播放仍在游戏中的休息动画。<br /><b>结果</b> 本次局数在 2–6 局间变化；Bibo 根据点数及与上次结果的比较产生反馈：点数较低时失落，较高时开心。连续结果还可让情绪逐级变化，例如外向型 Bibo 连赢后从开心、愉悦吟唱到欢呼；结束后休息或邀请继续。</p></section>
+              <section class="scene-card"><span class="scene-name">用户加入，变成回合玩</span><p class="scene-flow"><b>触发</b> Bibo 自己玩时，用户在两局间加入；也可直接从 App / 命令词选择回合玩。<br /><b>过程</b> 用户与 Bibo 轮流掷骰，系统记录每个点数是谁掷的、当前比分和剩余回合；用户掷骰时不启动电机，避免把马达误判成人的动作。用户中途停止时，Bibo 可叹气后回到自己玩，也可直接结束。<br /><b>结果</b> Bibo 按人格和连胜 / 连败变化反应，App 显示比分；结束后可留下带性格的小记，例如“今天我输得好惨啊”。高胜 / 高负时也可有机会再次邀请。回合上限、冷却时间以续航和温升验证为准。</p></section>
+              <section class="scene-card"><span class="scene-name">Bibo 观察用户掷骰</span><p class="scene-flow"><b>触发</b> 用户在回合中拿起、甩动并掷出骰子。<br /><b>过程</b> 骰子上报用户动作等级与稳定点数；Bibo 暂停自己的动作，表现出好奇或惊讶，并等待结果。<br /><b>结果</b> Bibo 根据点数、输赢和连续表现做出反应；同样是赢，外向型可以欢呼，内向型则低调开心。</p></section>
+            </div>
+          </article>
+
+          <article class="play-group group-human reveal">
+            <header class="group-heading"><span class="group-icon">↗</span><div><span class="group-label">关系对象 / 02</span><h3>人与单颗骰子</h3><p>一对一即时互动：骰子可以陪伴、做轻量决策，也能把触碰变成情绪反馈。</p></div></header>
+            <div class="scene-grid">
+              <section class="scene-card"><span class="scene-name">自主陪伴</span><p class="scene-flow"><b>触发</b> 骰子处于桌面伙伴 / 挂饰状态，暂时没有明确任务。<br /><b>过程</b> 它偶尔发出短音、轻微震动或调整姿态，试着吸引用户注意。<br /><b>结果</b> 用户回应后，互动继续；长时间无人理会时，骰子逐渐安静下来，形成“主动出现—等待—休眠”的陪伴节奏。</p></section>
+              <section class="scene-card"><span class="scene-name">决策与预测</span><p class="scene-flow"><b>触发</b> 用户敲骰子或在 App 进入决策模式，提出“要不要”“选哪个”等问题，并完成启动仪式。<br /><b>过程</b> 骰子先发出确认音，再转动。<br /><b>结果</b> 最终朝上的骰面代表结果；音调和震动表现它对这个结果的“态度”，让随机选择像一次有反馈的小仪式。<em>若直接对骰子口述问题，需要手机 / Bibo / 底座转发，或增加骰内麦克风与识别能力。</em></p></section>
+              <section class="scene-card"><span class="scene-name">解压互动：现有硬件版与扩展版</span><p class="scene-flow"><b>现有硬件可验证</b> 用户敲击或短暂摇晃骰子，再将它放回桌面。<br /><b>过程</b> 加速度传感器识别敲击、运动与静止；骰子用不同音调和震动回应，动作停止后逐步安静下来。识别阈值和反馈节奏仍需测试。<br /><b>结果</b> 先实现“动作触发—情绪化回应—平静收尾”的轻量解压体验。<br /><b>后续扩展</b> 轻捏、连续捏、用力按、抚摸等互动需要触摸或压力感知；现有硬件没有触摸传感器，需新增相应传感器并验证结构。</p></section>
+              <section class="scene-card"><span class="scene-name">回应用户反馈</span><p class="scene-flow"><b>触发</b> 用户玩过后表达“这个好玩”。<br /><b>过程</b> 手机 / Bibo 识别反馈并通过 BLE 转给骰子，或未来由骰子本地识别固定意图。<br /><b>结果</b> 骰子用连续多次震动回馈“我听见了”，让用户评价也进入双方互动。<em>直接语音输入需要麦克风与指令识别链路。</em></p></section>
+              <section class="scene-card"><span class="scene-name">外出环境反馈</span><p class="scene-flow"><b>触发</b> 用户带着骰子外出，周围环境变得热闹。<br /><b>过程</b> 中心设备或骰内麦克风感知环境声音变化，并将“热闹”这一状态传给骰子。<br /><b>结果</b> 骰子以较明显的震动和短音节回应环境，像是和用户一起注意到周围。<em>骰子原硬件没有麦克风，环境声感知属于新增能力。</em></p></section>
+            </div>
+            <figure class="reference-visual human-visual reveal"><img src="assets/human-dice-guide.png" alt="人与单颗骰子的自主陪伴、日常决策和解压互动设想图" /><figcaption>单颗骰子的三类日常互动设想。图中的“轻捏、抚摸”属于后续扩展，现有硬件没有触摸传感器；当前可优先验证敲击、摇晃、姿态与静止触发。</figcaption></figure>
+          </article>
+
+          <article class="play-group group-pet reveal">
+            <header class="group-heading"><span class="group-icon">⌁</span><div><span class="group-label">关系对象 / 03</span><h3>宠物与骰子</h3><p>宠物的追逐、扒拉和靠近，成为微型生物的外界刺激；重点是互动与安抚体验，不作治疗承诺。</p></div></header>
+            <div class="scene-grid">
+              <section class="scene-card"><span class="scene-name">你追我逃</span><p class="scene-flow"><b>触发</b> 骰子开始活动，宠物追上来并扒拉。<br /><b>过程</b> 第一次扒拉，骰子好奇发声；第二次，兴奋震动；多次重复后，高音抗议；继续触碰时强震并滚开。<br /><b>结果</b> 形成“骰子活动 → 宠物追逐 → 扒拉 → 骰子回应或逃开 → 暂停 → 再次活动”的循环。</p></section>
+              <section class="scene-card"><span class="scene-name">多骰轮流吸引</span><p class="scene-flow"><b>触发</b> 多颗骰子一起进入宠物互动模式。<br /><b>过程</b> 被扒拉的骰子停止运动，未被扒拉的继续活动；全部停下后，随机一颗重新启动。<br /><b>结果</b> 多颗骰子轮流吸引宠物注意，形成群体追逐节奏，而不是每颗同时乱动。</p></section>
+              <section class="scene-card"><span class="scene-name">宠物安抚与触觉互动</span><p class="scene-flow"><b>触发</b> 骰子放在宠物身边，宠物靠近、贴近或推开。<br /><b>过程</b> 骰子以低频震动、缓慢滚动回应；多颗骰子可以在不同位置形成不同节奏，并根据宠物靠近或推开改变反馈。<br /><b>结果</b> 让宠物获得有情绪的触觉互动体验。文档定位为“宠物安抚与触觉互动”，不宣称治疗或穴位按摩。</p></section>
+            </div>
+            <figure class="reference-visual pet-visual reveal"><img src="assets/pet-dice-guide.png" alt="宠物与二进制骰子互动流程图" /><figcaption>宠物互动的完整链路：自行活动、追逐扒拉、情绪升级、多骰轮流和安抚触觉互动</figcaption></figure>
+          </article>
+
+          <article class="play-group group-swarm reveal">
+            <header class="group-heading"><span class="group-icon">∴</span><div><span class="group-label">关系对象 / 04</span><h3>骰子与骰子</h3><p>从单颗生命体扩展到群体行为：用户可以指定谁参与，也可以让它们自主选择角色。</p></div></header>
+            <div class="scene-grid">
+              <section class="scene-card"><span class="scene-name">自主群体行为</span><p class="scene-flow"><b>触发</b> 多颗骰子进入同一群体场景。<br /><b>过程</b> 它们可以追逐、竞争、合作、结盟、躲避、抢占位置；过程可以被安排成有先后、有角色差异的行为。<br /><b>结果</b> 玩累后逐个安静下来。用户可指定参与的骰子，也可以让骰子自主选择角色，观察一个小社会如何形成。</p></section>
+              <section class="scene-card"><span class="scene-name">拼接摆件 / 场景解锁</span><p class="scene-flow"><b>触发</b> 骰子靠近、拼接或磁吸在一起。<br /><b>过程</b> 两颗拼接发确认音；三颗形成固定节奏；特定组合解锁场景旋律。性格相合会出现和谐音型，性格冲突则震动、排斥或滚开。<br /><b>结果</b> 长时间拼接后进入休息或合唱状态，桌面摆件由静态陈列变成可触发的群体关系。</p></section>
+              <section class="scene-card"><span class="scene-name">合唱团 / 故事团</span><p class="scene-flow"><b>触发</b> 选择一组骰子进入合唱团或故事团情景。<br /><b>过程</b> 多颗骰子按顺序组合光效、声音和震动频率：可以轮流发出短音，也可以按预设节奏接力。<br /><b>结果</b> 单颗骰子的简单表达被组合成一段集体表演或情景回应。靠近 / 拼接检测和角色同步需要结构及固件验证。</p></section>
+            </div>
+          </article>
+
+          <article class="play-group group-child reveal">
+            <header class="group-heading"><span class="group-icon">□</span><div><span class="group-label">关系对象 / 05</span><h3>儿童与骰子</h3><p>不只做教育桌游：骰子可以是孩子照顾的小生物，也可以成为过家家和故事事件里的角色。</p></div></header>
+            <div class="scene-grid">
+              <section class="scene-card"><span class="scene-name">把它当微生物养</span><p class="scene-flow"><b>触发</b> 孩子给骰子起名字、做窝、盖小被子。<br /><b>过程</b> 通过特定敲击“喂食”或“哄睡”；不同性格的骰子会有不同回应。骰子累了会减少回应，休息后恢复活跃。<br /><b>结果</b> 孩子逐渐学会每只小生物不同的脾气和照顾方式，形成持续的照料关系。这一方向被文档列为最贴近现有硬件的儿童玩法。</p></section>
+              <section class="scene-card"><span class="scene-name">“蛋里的小怪物”故事</span><p class="scene-flow"><b>触发</b> 在 App 里选择内置情景故事，或自主设定骰子的角色；例如把一颗骰子想象成“蛋里的小怪物”。<br /><b>过程</b> 翻动、震动、光效和音调变化共同表现剧情事件：孵化、挣扎、苏醒、发怒。<br /><b>结果</b> 故事完成后，个体或群体骰子用回应、合唱或排列组合互动作为奖励。核心乐趣是孩子自己赋予骰子意义。</p></section>
+              <section class="scene-card"><span class="scene-name">同一颗骰子的其他故事皮肤</span><p class="scene-flow"><b>可选角色</b> 文档中的故事设定还包括：坏脾气的石头、宇宙能源块、被封印的小精灵、玩具医院里的病人。<br /><b>可用道具</b> 外皮、纸房子和简单道具帮助孩子搭建场景；开放式角色玩具的硬件重点是外皮与道具，不是继续堆电子功能。<br /><b>结果</b> 同一颗骰子换一个故事身份，就能进入新的过家家剧情。</p></section>
+            </div>
+            <div class="future-extension"><b>卡牌 / 桌游方向</b><span><b>文档中的方向示例：</b>把骰子作为玩法模块，与情绪卡牌或飞行棋等配件结合；例如掷骰推进一轮棋局，再由卡牌给出情景或行动。卡牌内容和具体规则尚未在文档中展开，属于待设计验证的扩展玩法。</span></div>
+            <figure class="reference-visual child-visual reveal"><img src="assets/children-dice-guide.png" alt="儿童骰子伙伴养成与故事乐园示意图" /><figcaption>儿童开放式角色玩法：照顾小生物、设定角色、搭建场景和编故事</figcaption></figure>
+          </article>
+
+          <article class="play-group group-birthday reveal">
+            <header class="group-heading"><span class="group-icon">∴</span><div><span class="group-label">组合场景 / 06</span><h3>群体性事件：一群小生物正在做什么</h3><p>多个骰子作为二进制生命体，不只是同时工作，而是通过简单的音阶、音节、震动和滚动，表现出自己的性格，并共同形成一个“事件”。</p></div></header>
+            <div class="swarm-thesis"><div class="swarm-quote">像一群哇啦哇啦的小生物，听不懂它们具体说什么，却能感受到它们正在忙着做一件事。</div><p>一个骰子发出“电报”，其他骰子接二连三响应；活泼的会抢着加入，胆小的会延迟回应，冲突的会排斥或滚开。它们的“群体性”不依赖完整语言，而依赖重复出现的行为关系。</p></div>
+            <div class="birthday-flow">
+              <div class="birthday-step"><b>01 / 电报接力</b><p>一颗骰子先发出短音或一组节奏，其他骰子按先后接力回应，像小生物在传递一条听不懂但有秩序的消息。</p></div>
+              <div class="birthday-step"><b>02 / 故事团</b><p>几颗骰子各自承担一个角色：一个发起、一个跟随、一个打断、一个收尾；通过音调和震动把一段故事演出来。</p></div>
+              <div class="birthday-step"><b>03 / 生日小乐团</b><p>中心设备分配音符和节拍，多颗骰子同步演奏《生日快乐》，再按节拍震动、翻滚或翻身。</p></div>
+              <div class="birthday-step"><b>04 / 群体状态</b><p>它们可以一起兴奋、争抢位置、逐个安静，或在性格相合时形成和谐音型；用户感受到的是“它们正在一起做事”。</p></div>
+            </div>
+            <div class="swarm-note"><b>启动方式</b><span>可由 App 直接启动；如果要通过用户说“开始”、拍手或唱歌触发表演，需要额外的麦克风 / 声音输入链路。</span></div>
+            <figure class="reference-visual swarm-visual reveal"><img src="assets/swarm-storyboard.png" alt="多个二进制小生物共同形成事件的故事板" /><figcaption>群体性事件的视觉化：电报接力、故事团、生日小乐团与群体状态</figcaption></figure>
+          </article>
+        </div>
+        <div class="ipo reveal">
+          <div class="ipo-title"><span>底层交互</span><strong>所有玩法都可以还原成 IPO</strong></div>
+          <div class="ipo-row"><div class="ipo-cell input"><b>INPUT</b><strong>输入</strong><p>拿起、翻转、晃动、敲击、掷骰、App / Bibo 指令、其他骰子或宠物刺激</p></div><div class="ipo-arrow">→</div><div class="ipo-cell process"><b>PROCESS</b><strong>处理</strong><p>动作特征 + 当前情绪 + 稳定性格 + 互动历史 + 随机机制</p></div><div class="ipo-arrow">→</div><div class="ipo-cell output"><b>OUTPUT</b><strong>输出</strong><p>震动、滚动、简单音节、PWM 七音阶、灯光、骰面结果与群体同步</p></div></div>
+        </div>
+      </section>
+
+      <section class="hardware section-pad" id="hardware">
+        <div class="section-heading reveal">
+          <p class="section-kicker">04 / HARDWARE BASE</p>
+          <h2>生命感不是魔法，<br /><span>它有一套具体的硬件基础。</span></h2>
+          <p>现有硬件先保证“感知动作、产生结果、表达反馈”；新增的声音和群体能力，再逐步把骰子从可控硬件推向可互动生命体。</p>
+        </div>
+        <div class="hardware-profile reveal">
+          <div class="profile-heading"><span>硬件底稿 / V0.5</span><strong>一颗可连接、可感知、可震动的 25 mm 级智能骰子</strong></div>
+          <div class="profile-grid">
+            <div class="profile-item"><b>外形与结构</b><strong>约 25 × 25 × 25 mm</strong><span>圆角六面体，参考 Boogie Dice；新增器件后需重新验证重心与六面结果公平性。</span></div>
+            <div class="profile-item"><b>主控与时钟</b><strong>CH592F / BLE</strong><span>外接 32 MHz 与 32.768 kHz 晶振；现有记录显示 RAM 不足，后续计划重新评估主控。</span></div>
+            <div class="profile-item"><b>运动感知</b><strong>QMA6100T 加速度传感器</strong><span>用于姿态、运动和静止判断；当前文档未配置陀螺仪，不等同于完整 IMU。</span></div>
+            <div class="profile-item"><b>动作输出</b><strong>ERM 偏心电机</strong><span>通过 MOSFET 驱动，用于震动反馈，以及尝试实现翻动、摇摆和自主掷骰。</span></div>
+            <div class="profile-item"><b>供电与充电</b><strong>100mAh 锂电池 / Type-C</strong><span>3.3V LDO、保护与电源控制需验证；Type-C 5V，当前充电设定理论约 50mA。</span></div>
+            <div class="profile-item"><b>PCB 与视觉</b><strong>四层 PCB，约 1.01 mm</strong><span>原电路有 2 颗 WS2812，但因电池遮挡透光路径，灯光效果暂未作为确定出货能力。</span></div>
+          </div>
+        </div>
+        <div class="hardware-layout">
+          <div class="hardware-stack reveal">
+            <div class="hardware-layer layer-body"><span class="layer-no">01</span><div><b>六面体结构</b><small>约 25 × 25 × 25 mm，重心与掷骰公平性需要重新验证</small></div><i></i></div>
+            <div class="hardware-layer layer-sense"><span class="layer-no">02</span><div><b>感知输入</b><small>QMA6100T 加速度传感器 · 按键 · BLE 指令</small></div><i></i></div>
+            <div class="hardware-layer layer-brain"><span class="layer-no">03</span><div><b>状态与通信</b><small>BLE 主控、唯一设备 ID、多骰子事件同步</small></div><i></i></div>
+            <div class="hardware-layer layer-expression"><span class="layer-no">04</span><div><b>表达输出</b><small>ERM 震动 / 动作 · 蜂鸣器 PWM 七音阶 · 可选 LED</small></div><i></i></div>
+            <div class="hardware-layer layer-energy"><span class="layer-no">05</span><div><b>能量与维护</b><small>100mAh 锂电池 · Type-C · 低功耗与充电保护</small></div><i></i></div>
+          </div>
+          <div class="hardware-notes reveal reveal-delay">
+            <div class="hardware-note"><span class="hardware-state state-now">已有基础</span><h3>动作可以被感知</h3><p>拿起、翻转、晃动、掷出和结果稳定等动作，是当前硬件能支撑的主要交互输入。</p></div>
+            <div class="hardware-note"><span class="hardware-state state-next">本期调整</span><h3>声音成为新的表达通道</h3><p>采用无源压电蜂鸣器和 MCU PWM 播放 Do、Re、Mi、Fa、Sol、La、Si 七音阶，用音高、节奏和重复表达情绪。</p></div>
+            <div class="hardware-note"><span class="hardware-state state-check">需要验证</span><h3>直接听懂人话不是默认能力</h3><p>如果用户要直接对骰子说固定指令，需要增加麦克风和本地识别链路；也可以先由手机、Bibo 或底座听懂，再通过 BLE 下发。</p></div>
+            <div class="hardware-note"><span class="hardware-state state-check">需要验证</span><h3>新增器件会改变身体平衡</h3><p>蜂鸣器、可选灯光和新的主控都会影响重量分布、峰值电流、续航和自动掷骰的公平性。</p></div>
+          </div>
+        </div>
+        <div class="hardware-capabilities reveal">
+          <div class="capability-heading"><span>能力边界</span><strong>从硬件事实到玩法想象，中间需要明确哪些已经成立</strong></div>
+          <div class="capability-table">
+            <div class="cap-row cap-head"><span>当前硬件可以支撑</span><span>暂时不能直接承诺</span><span>需要新增 / 验证</span></div>
+            <div class="cap-row"><span>BLE 连接 Bibo / App；上报点数、电量和状态；多骰子可分配唯一 ID。</span><span>BLE 本身不能联网，也不能可靠判断骰子的精确距离或方位。</span><span>多骰同步的时间误差、群组调度和断线安全策略。</span></div>
+            <div class="cap-row"><span>识别姿态、静止、运动；可开发拿起、翻转、摇晃、敲击和掷骰事件。</span><span>不能直接识别捏压力度、抚摸、宠物撕咬，也不能把动作准确换算成施力值。</span><span>捏压 / 触摸需要压力、形变或电容传感器；宠物版本需要独立安全验证。</span></div>
+            <div class="cap-row"><span>ERM 提供震动、节奏动作，并尝试让骰子翻动或自主滚动。</span><span>不能稳定保证定向追逐、主动靠近、真正离地跳跃或精确逃跑。</span><span>新增蜂鸣器、音频与马达协同时，需验证噪声、峰值电流、温升和重心。</span></div>
+            <div class="cap-row"><span>通过蜂鸣器 + PWM 播放七声音阶，用音高、节奏、重复和震动表达状态。</span><span>不会自动播放完整自然语言，也不等于骰子本地理解任意问题。</span><span>直接对骰子说固定指令，需要麦克风与本地识别；也可由手机、Bibo 或底座识别后 BLE 下发。</span></div>
+          </div>
+        </div>
+        <div class="hardware-footer reveal"><span>当前判断</span><strong>先用最小硬件闭环证明“它会回应”，再用多骰子和场景套装证明“它们会形成生态”。</strong></div>
+      </section>
+    </main>
+
+    <footer class="footer section-pad">
+      <div><span class="footer-mark">B/D</span><p>Bibo 生态中的骰子生命体</p></div>
+      <p class="footer-note">内容依据现有骰子玩法规划、Bibo 回合玩法规划及硬件 V0.5 / V0.6 需求整理。</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
